@@ -35,7 +35,7 @@ app.post('/facebook', function(req, res) {
   console.log('Facebook request body:');
     console.log('ok got it');
   console.log(req.body);
-  var data = JSON.parse(req.messaging);
+  var data = JSON.parse(req.body.messaging);
   console.log(data);
   // Process the Facebook updates here
   res.sendStatus(200);
