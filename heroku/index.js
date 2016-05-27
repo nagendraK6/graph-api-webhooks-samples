@@ -35,6 +35,8 @@ app.post('/facebook', function(req, res) {
   console.log('Facebook request body:');
     console.log('ok got it');
   console.log(req.body);
+  var data = JSON.parse(req.messaging);
+  console.log(data);
   // Process the Facebook updates here
   res.sendStatus(200);
 });
@@ -42,6 +44,7 @@ app.post('/facebook', function(req, res) {
 app.post('/instagram', function(req, res) {
   console.log('Instagram request body:');
   console.log(req.body);
+  
   // Process the Instagram updates here
   res.sendStatus(200);
 });
