@@ -41,6 +41,7 @@ app.post('/facebook', function(req, res) {
 app.post('/instagram', function(req, res) {
   console.log('Instagram request body:');
   console.log(req.body);
+  console.log('ok got it');
   // Process the Instagram updates here
   res.sendStatus(200);
 });
