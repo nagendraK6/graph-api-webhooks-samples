@@ -33,7 +33,7 @@ app.get(['/facebook', '/instagram'], function(req, res) {
 
 app.post('/facebook', function(req, res) {
   console.log('Facebook request body:');
-    console.log('ok got it');
+    console.log('ok i hit your server');
   console.log(req.body);
   console.log(JSON.stringify(req.body));
   // Process the Facebook updates here
